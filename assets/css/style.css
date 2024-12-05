@@ -339,6 +339,7 @@ header {
     }
 
     .right_side {
+      width: 300px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -471,3 +472,12 @@ footer {
 }
 
 /* #endregion :::: FOOTER :::: */
+
+/* #region MEDIA QUERIES */
+@media (min-width:576px) {
+  .add_to_cart {
+    width: 100%;
+  }
+}
+
+/* #endregion MEDIA QUERIES */
