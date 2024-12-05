@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  // #region Slider
   const products = [
     { frontImage: '1.webp', backImage: '1b.webp' },
     { frontImage: '2.webp', backImage: '2b.webp' },
@@ -41,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
       frontImage.style.display = 'block';
       thumb1.classList.add('active');
       thumb2.classList.remove('active');
-      console.log(thumb1);
     } else if (imageNumber === 2) {
       backImage.src = './assets/img/' + product.backImage;
       frontImage.style.display = 'none';
@@ -50,4 +51,47 @@ document.addEventListener('DOMContentLoaded', function () {
       thumb2.classList.add('active');
     }
   }
+  // #endregion Slider
+
+  // #region Like icon
+
+  // Seleziona tutte le icone del cuore
+  const likeIcons = document.querySelectorAll('.fa-heart');
+
+  // Seleziona il cuore nell'header e crea il badge
+  const headerHeart = document.querySelector('.account_icons .fa-heart');
+  const badge = document.querySelector('.counter');
+  headerHeart.style.position = 'relative';
+
+  // Variabile per contare i prodotti preferiti
+  let favoriteCount = 0;
+
+  // Aggiungi un event listener a ciascun cuore
+  likeIcons.forEach((icon) => {
+    icon.addEventListener('click', function () {
+      // Toggle della classe "liked" per il cuore
+      icon.classList.toggle('liked');
+
+      // Aggiorna il conteggio dei preferiti
+      if (icon.classList.contains('liked')) {
+        badge.classList.remove('d-none');
+        headerHeart.appendChild(badge);
+        favoriteCount++;
+      } else {
+        favoriteCount--;
+      }
+
+      // Aggiorna il badge nell'header
+      badge.textContent = favoriteCount;
+
+      if (favoriteCount === 0) {
+        badge.classList.add('d-none');
+      }
+
+      // Nasconde il badge se non ci sono preferiti
+      badge.style.display = favoriteCount > 0 ? 'flex' : 'none';
+    });
+  });
+  // #endregion Like icon
+
 });

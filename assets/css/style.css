@@ -51,6 +51,21 @@ img {
   font-style: normal;
 }
 
+.counter {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  width: 0.7rem;
+  height: 0.7rem;
+  padding: 0.1rem 0.1rem 0.1rem 0.2rem;
+  color: var(--color-lighter);
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: bold;
+  background-color: var(--color-discount);
+  border-radius: 100%;
+}
+
 /* #endregion :::: UTILITY RULES */
 
 /* #region :::: HEADER :::: */
@@ -89,19 +104,8 @@ header {
         position: relative;
       }
 
-      .counter {
-        position: absolute;
-        top: 40%;
-        left: 60%;
-        width: 0.65rem;
-        height: 0.65rem;
-        padding: 0.1rem 0.1rem 0.5rem 0.1rem;
-        color: var(--color-primary);
-        text-align: center;
-        font-size: 0.5rem;
-        font-weight: bold;
-        background-color: white;
-        border-radius: 100%;
+      .fa-heart {
+        position: relative;
       }
     }
   }
@@ -194,8 +198,12 @@ header {
       top: 115%;
     }
 
-    i {
+    .fa-heart {
       transition: .2s linear;
+
+      &.liked {
+        color: var(--color-discount);
+      }
     }
 
     &:hover {
@@ -206,7 +214,6 @@ header {
     &:hover>i {
       transform: scale(1.2);
     }
-
   }
 
   .discount,
