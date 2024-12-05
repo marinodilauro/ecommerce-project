@@ -127,7 +127,16 @@
                 <li class="product_brand">Levi's</li>
 
                 <!-- Product name -->
-                <li class="product_name">Relaxed Fit Tee Unisex</li>
+                <li class="product_name">
+                  <button
+                    type="button"
+                    class="modal_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product1Modal"
+                  >
+                    Relaxed Fit Tee Unisex
+                  </button>
+                </li>
 
                 <!-- Product price -->
                 <li class="product_price">
@@ -135,6 +144,107 @@
                   <span class="old_price">29,99 € </span>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="product1Modal"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="product1ModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between">
+                  <div class="left_side">
+                    <div class="image_slider">
+                      <div class="slider_container">
+                        <div class="slider_wrapper" tabindex="0">
+                          <!-- Active image -->
+                          <div class="item" data-product-id="1">
+                            <img
+                              class="active-image"
+                              id="activeImage_1_1"
+                              src=""
+                              alt="Front Image"
+                            />
+                            <img
+                              class="active-image"
+                              id="activeImage_2_1"
+                              src=""
+                              alt="Back Image"
+                              style="display: none"
+                            />
+                          </div>
+
+                          <!-- Thumbnails -->
+                          <div class="thumbs">
+                            <div
+                              class="thumb"
+                              data-product-id="1"
+                              data-image-number="1"
+                            >
+                              <img
+                                id="thumb_1_1"
+                                src=""
+                                alt="Front Image Thumbnail"
+                              />
+                            </div>
+                            <div
+                              class="thumb"
+                              data-product-id="1"
+                              data-image-number="2"
+                            >
+                              <img
+                                id="thumb_2_1"
+                                src=""
+                                alt="Back Image Thumbnail"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="right_side">
+                    <div class="product_description">
+                      <p class="product_brand">Levi's</p>
+
+                      <p class="product_name">Relaxed Tee Unisex</p>
+
+                      <div class="product_price">
+                        <span class="discounted_price">14,99 €</span>
+                        <span class="old_price">29,99 €</span>
+                      </div>
+                    </div>
+
+                    <div class="buttons">
+                      <div class="button add_to_cart">
+                        <div class="button_wrapper">
+                          <span class="text">Buy Now</span>
+                          <i class="icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="button close"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product 1 -->
@@ -172,7 +282,16 @@
                 <li class="product_brand">Guess</li>
 
                 <!-- Product name -->
-                <li class="product_name">Roses Tee</li>
+                <li class="product_name">
+                  <button
+                    type="button"
+                    class="modal_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product2Modal"
+                  >
+                    Roses Tee
+                  </button>
+                </li>
 
                 <!-- Product price -->
                 <li class="product_price">
@@ -180,6 +299,107 @@
                   <span class="old_price">29,99 €</span>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="product2Modal"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="product2ModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between">
+                  <div class="left_side">
+                    <div class="image_slider">
+                      <div class="slider_container">
+                        <div class="slider_wrapper" tabindex="0">
+                          <!-- Active image -->
+                          <div class="item" data-product-id="2">
+                            <img
+                              class="active-image"
+                              id="activeImage_1_2"
+                              src=""
+                              alt="Front Image"
+                            />
+                            <img
+                              class="active-image"
+                              id="activeImage_2_2"
+                              src=""
+                              alt="Back Image"
+                              style="display: none"
+                            />
+                          </div>
+
+                          <!-- Thumbnails -->
+                          <div class="thumbs">
+                            <div
+                              class="thumb"
+                              data-product-id="2"
+                              data-image-number="1"
+                            >
+                              <img
+                                id="thumb_1_2"
+                                src=""
+                                alt="Front Image Thumbnail"
+                              />
+                            </div>
+                            <div
+                              class="thumb"
+                              data-product-id="2"
+                              data-image-number="2"
+                            >
+                              <img
+                                id="thumb_2_2"
+                                src=""
+                                alt="Back Image Thumbnail"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="right_side">
+                    <div class="product_description">
+                      <p class="product_brand">Guess</p>
+
+                      <p class="product_name">Roses Tee</p>
+
+                      <div class="product_price">
+                        <span class="discounted_price">20,99 €</span>
+                        <span class="old_price">29,99 €</span>
+                      </div>
+                    </div>
+
+                    <div class="buttons">
+                      <div class="button add_to_cart">
+                        <div class="button_wrapper">
+                          <span class="text">Buy Now</span>
+                          <i class="icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="button close"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product 2 -->
@@ -217,7 +437,16 @@
                 <li class="product_brand">Come Zucchero Filato</li>
 
                 <!-- Product name -->
-                <li class="product_name">Voglia di colori pastello</li>
+                <li class="product_name">
+                  <button
+                    type="button"
+                    class="modal_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product3Modal"
+                  >
+                    Voglia di colori pastello
+                  </button>
+                </li>
 
                 <!-- Product price -->
                 <li class="product_price">
@@ -225,6 +454,107 @@
                   <span class="old_price">184,99 €</span>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="product3Modal"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="product3ModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between">
+                  <div class="left_side">
+                    <div class="image_slider">
+                      <div class="slider_container">
+                        <div class="slider_wrapper" tabindex="0">
+                          <!-- Active image -->
+                          <div class="item" data-product-id="3">
+                            <img
+                              class="active-image"
+                              id="activeImage_1_3"
+                              src=""
+                              alt="Front Image"
+                            />
+                            <img
+                              class="active-image"
+                              id="activeImage_2_3"
+                              src=""
+                              alt="Back Image"
+                              style="display: none"
+                            />
+                          </div>
+
+                          <!-- Thumbnails -->
+                          <div class="thumbs">
+                            <div
+                              class="thumb"
+                              data-product-id="3"
+                              data-image-number="1"
+                            >
+                              <img
+                                id="thumb_1_3"
+                                src=""
+                                alt="Front Image Thumbnail"
+                              />
+                            </div>
+                            <div
+                              class="thumb"
+                              data-product-id="3"
+                              data-image-number="2"
+                            >
+                              <img
+                                id="thumb_2_3"
+                                src=""
+                                alt="Back Image Thumbnail"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="right_side">
+                    <div class="product_description">
+                      <p class="product_brand">Come Zucchero Filato</p>
+
+                      <p class="product_name">Voglia di colori pastello</p>
+
+                      <div class="product_price">
+                        <span class="discounted_price">184,99 €</span>
+                        <span class="old_price">129,99 €</span>
+                      </div>
+                    </div>
+
+                    <div class="buttons">
+                      <div class="button add_to_cart">
+                        <div class="button_wrapper">
+                          <span class="text">Buy Now</span>
+                          <i class="icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="button close"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product 3 -->
@@ -264,7 +594,16 @@
                 <li class="product_brand">Levi's</li>
 
                 <!-- Product name -->
-                <li class="product_name">Tee Unisex</li>
+                <li class="product_name">
+                  <button
+                    type="button"
+                    class="modal_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product4Modal"
+                  >
+                    Tee Unisex
+                  </button>
+                </li>
 
                 <!-- Product price -->
                 <li class="product_price">
@@ -272,6 +611,107 @@
                   <span class="old_price">29,99 €</span>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="product4Modal"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="product4ModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between">
+                  <div class="left_side">
+                    <div class="image_slider">
+                      <div class="slider_container">
+                        <div class="slider_wrapper" tabindex="0">
+                          <!-- Active image -->
+                          <div class="item" data-product-id="4">
+                            <img
+                              class="active-image"
+                              id="activeImage_1_4"
+                              src=""
+                              alt="Front Image"
+                            />
+                            <img
+                              class="active-image"
+                              id="activeImage_2_4"
+                              src=""
+                              alt="Back Image"
+                              style="display: none"
+                            />
+                          </div>
+
+                          <!-- Thumbnails -->
+                          <div class="thumbs">
+                            <div
+                              class="thumb"
+                              data-product-id="4"
+                              data-image-number="1"
+                            >
+                              <img
+                                id="thumb_1_4"
+                                src=""
+                                alt="Front Image Thumbnail"
+                              />
+                            </div>
+                            <div
+                              class="thumb"
+                              data-product-id="4"
+                              data-image-number="2"
+                            >
+                              <img
+                                id="thumb_2_4"
+                                src=""
+                                alt="Back Image Thumbnail"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="right_side">
+                    <div class="product_description">
+                      <p class="product_brand">Levi's</p>
+
+                      <p class="product_name">Tee Unisex</p>
+
+                      <div class="product_price">
+                        <span class="discounted_price">14,99 €</span>
+                        <span class="old_price">29,99 €</span>
+                      </div>
+                    </div>
+
+                    <div class="buttons">
+                      <div class="button add_to_cart">
+                        <div class="button_wrapper">
+                          <span class="text">Buy Now</span>
+                          <i class="icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="button close"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product 4 -->
@@ -311,14 +751,124 @@
                 <li class="product_brand">Maya Deluxe</li>
 
                 <!-- Product name -->
-                <li class="product_name">Stripe Bodice</li>
+                <li class="product_name">
+                  <button
+                    type="button"
+                    class="modal_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product5Modal"
+                  >
+                    Stripe Bodice
+                  </button>
+                </li>
 
                 <!-- Product price -->
                 <li class="product_price">
-                  <span class="discount_price">99,99 €</span>
-                  <span class="old_price">49,99 €</span>
+                  <span class="discount_price">49,99 €</span>
+                  <span class="old_price">99,99 €</span>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="product5Modal"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="product5ModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between">
+                  <div class="left_side">
+                    <div class="image_slider">
+                      <div class="slider_container">
+                        <div class="slider_wrapper" tabindex="0">
+                          <!-- Active image -->
+                          <div class="item" data-product-id="5">
+                            <img
+                              class="active-image"
+                              id="activeImage_1_5"
+                              src=""
+                              alt="Front Image"
+                            />
+                            <img
+                              class="active-image"
+                              id="activeImage_2_5"
+                              src=""
+                              alt="Back Image"
+                              style="display: none"
+                            />
+                          </div>
+
+                          <!-- Thumbnails -->
+                          <div class="thumbs">
+                            <div
+                              class="thumb"
+                              data-product-id="5"
+                              data-image-number="1"
+                            >
+                              <img
+                                id="thumb_1_5"
+                                src=""
+                                alt="Front Image Thumbnail"
+                              />
+                            </div>
+                            <div
+                              class="thumb"
+                              data-product-id="5"
+                              data-image-number="2"
+                            >
+                              <img
+                                id="thumb_2_5"
+                                src=""
+                                alt="Back Image Thumbnail"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="right_side">
+                    <div class="product_description">
+                      <p class="product_brand">Maya Deluxe</p>
+
+                      <p class="product_name">Stripe Bodice</p>
+
+                      <div class="product_price">
+                        <span class="discounted_price">99,99 €</span>
+                        <span class="old_price">49,99 €</span>
+                      </div>
+                    </div>
+
+                    <div class="buttons">
+                      <div class="button add_to_cart">
+                        <div class="button_wrapper">
+                          <span class="text">Buy Now</span>
+                          <i class="icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="button close"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product 5 -->
@@ -356,7 +906,16 @@
                 <li class="product_brand">Esprit</li>
 
                 <!-- Product name -->
-                <li class="product_name">Maglione - Black</li>
+                <li class="product_name">
+                  <button
+                    type="button"
+                    class="modal_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product6Modal"
+                  >
+                    Maglione - Black
+                  </button>
+                </li>
 
                 <!-- Product price -->
                 <li class="product_price">
@@ -365,11 +924,148 @@
               </ul>
             </div>
           </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="product6Modal"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="product6ModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between">
+                  <div class="left_side">
+                    <div class="image_slider">
+                      <div class="slider_container">
+                        <div class="slider_wrapper" tabindex="0">
+                          <!-- Active image -->
+                          <div class="item" data-product-id="6">
+                            <img
+                              class="active-image"
+                              id="activeImage_1_6"
+                              src=""
+                              alt="Front Image"
+                            />
+                            <img
+                              class="active-image"
+                              id="activeImage_2_6"
+                              src=""
+                              alt="Back Image"
+                              style="display: none"
+                            />
+                          </div>
+
+                          <!-- Thumbnails -->
+                          <div class="thumbs">
+                            <div
+                              class="thumb"
+                              data-product-id="6"
+                              data-image-number="1"
+                            >
+                              <img
+                                id="thumb_1_6"
+                                src=""
+                                alt="Front Image Thumbnail"
+                              />
+                            </div>
+                            <div
+                              class="thumb"
+                              data-product-id="6"
+                              data-image-number="2"
+                            >
+                              <img
+                                id="thumb_2_6"
+                                src=""
+                                alt="Back Image Thumbnail"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="right_side">
+                    <div class="product_description">
+                      <p class="product_brand">Esprit</p>
+
+                      <p class="product_name">Maglione - Black</p>
+
+                      <div class="product_price">
+                        <span class="normal_price">29,99 €</span>
+                      </div>
+                    </div>
+
+                    <div class="buttons">
+                      <div class="button add_to_cart">
+                        <div class="button_wrapper">
+                          <span class="text">Buy Now</span>
+                          <i class="icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="button close"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Product 6 -->
         </div>
       </section>
     </main>
     <!-- #endregion Main -->
+
+    <!-- #region :::: FOOTER :::: -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg_primary"
+    >
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0">
+              © 2024 Marino di Lauro. All rights reserved.
+            </span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- #endregion :::: FOOTER :::: -->
+
+    <!-- JS link -->
+    <script type="module" src="./assets/js/slider.js"></script>
 
     <!-- Boootsrap JS link -->
     <script
