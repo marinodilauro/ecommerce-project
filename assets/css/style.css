@@ -3,3 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --color-primary: rgb(134, 147, 247);
+  --color-secondary: rgb(72, 93, 255);
+  --color-light: rgba(227, 227, 227, 1);
+  --color-lighter: rgba(255, 255, 255, 1);
+  --color-dark: rgba(26, 26, 26, 1);
+  --color-discount: rgba(255, 0, 0, 1);
+  --color-sustainability: rgba(0, 128, 0, 1);
+  --color-header-height: 55px;
+  --color-footer-height: 95px;
+}
+
+/* #region :::: UTILITY RULES */
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+nav {
+  padding: 1rem 0;
+}
+
+a {
+  color: var(--color-lighter);
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  color: var(--color-lighter);
+  font-size: 0.75rem;
+  gap: 1rem;
+}
+
+
+.montserrat-underline-300 {
+  font-family: "Montserrat Underline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* #endregion :::: UTILITY RULES */
+
+/* #region :::: HEADER :::: */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-lighter);
+  width: 100%;
+  box-shadow: 0 0 4px 0 var(--color-dark);
+
+  .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+
+    .logo,
+    .account_icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .product_section_links {
+      font-weight: 600;
+    }
+
+    .logo {
+      justify-content: center;
+      width: 40%;
+    }
+
+    .account_icons {
+      justify-content: flex-end;
+      gap: 1rem;
+
+      a:not(:nth-child(1)) {
+        position: relative;
+      }
+
+      .counter {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        width: 0.65rem;
+        height: 0.65rem;
+        padding: 0.1rem 0.1rem 0.5rem 0.1rem;
+        color: var(--color-primary);
+        text-align: center;
+        font-size: 0.5rem;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+/* #endregion :::: HEADER :::: */
