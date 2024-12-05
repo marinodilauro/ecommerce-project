@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // #endregion Slider
 
   // #region Like icon
-
   // Seleziona tutte le icone del cuore
   const likeIcons = document.querySelectorAll('.fa-heart');
 

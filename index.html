@@ -84,7 +84,16 @@
                 ><i class="fa-regular fa-heart">
                   <span class="counter d-none"></span> </i
               ></a>
-              <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+              <button
+                type="button"
+                class="modal_button"
+                data-bs-toggle="offcanvas"
+                href="#show_cart"
+                role="button"
+                aria-controls="show_cart"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
             </div>
           </div>
         </nav>
@@ -1044,6 +1053,118 @@
           <!-- Product 6 -->
         </div>
       </section>
+
+      <!-- Offcanvas -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="show_cart"
+        aria-labelledby="show_cartLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="show_cartLabel">Carrello</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column text-start">
+          <ul class="list-unstyled">
+            <li>
+              <div class="d-flex gap-3 align-items-start py-3 border-top">
+                <div class="col-4">
+                  <img
+                    class="w-100 h-100 object-fit-contain"
+                    src="./assets/img/1.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="col-8">
+                  <ul class="product_description list-unstyled mt-3 mb-0">
+                    <!-- Product brand -->
+                    <li class="product_brand">Levi's</li>
+
+                    <!-- Product name -->
+                    <li class="product_name fw-bold">Relaxed Fit Tee Unisex</li>
+
+                    <!-- Product price -->
+                    <li class="product_price">
+                      <span class="discount_price">14,99 €</span>
+                      <span class="old_price">29,99 € </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex gap-3 align-items-start py-3 border-top">
+                <div class="col-4">
+                  <img src="./assets/img/3.webp" alt="" />
+                </div>
+                <div class="col-8">
+                  <ul class="product_description list-unstyled mt-3 mb-0">
+                    <!-- Product brand -->
+                    <li class="product_brand">Come Zucchero Filato</li>
+
+                    <!-- Product name -->
+                    <li class="product_name fw-bold">
+                      Voglia di colori pastello
+                    </li>
+
+                    <!-- Product price -->
+                    <li class="product_price">
+                      <span class="discount_price">129,99 €</span>
+                      <span class="old_price">184,99 € </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="d-flex gap-3 align-items-start py-3 border-top border-bottom"
+              >
+                <div class="col-4">
+                  <img src="./assets/img/5.webp" alt="" />
+                </div>
+                <div class="col-8">
+                  <ul class="product_description list-unstyled mt-3 mb-0">
+                    <!-- Product brand -->
+                    <li class="product_brand">Maya Deluxe</li>
+
+                    <!-- Product name -->
+                    <li class="product_name fw-bold">Stripe Body</li>
+
+                    <!-- Product price -->
+                    <li class="product_price">
+                      <span class="discount_price">99,99 € </span>
+                      <span class="old_price">49,99 €</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="total d-flex flex-column gap-3 gap-sm-5">
+            <div class="d-flex justify-content-between w-100">
+              <span>Totale</span>
+              <strong>274,97 €</strong>
+            </div>
+            <div class="buttons">
+              <div class="button add_to_cart w-100">
+                <div class="button_wrapper">
+                  <span class="text">Paga</span>
+                  <i class="icon fa-solid fa-credit-card"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- #endregion Main -->
 
